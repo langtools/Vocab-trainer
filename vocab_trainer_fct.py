@@ -36,7 +36,7 @@ def get_vocab(filePath, mode, reverse=False):
 
     # reads in with forms
     if mode == 2:
-        with open(filePath, "r") as file:
+        with open(filePath, "r", encoding='utf-8') as file:
             for line in file:
                 line = line.strip()
                 parts = line.split(" - ")
@@ -50,7 +50,7 @@ def get_vocab(filePath, mode, reverse=False):
 
     # reads in without forms
     else:
-        with open(filePath, "r", encoding="ISO-8859-1") as file:
+        with open(filePath, "r", encoding="utf-8") as file:
             for line in file:
                 line = line.strip()
                 parts = line.split(" - ")

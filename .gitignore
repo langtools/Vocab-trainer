@@ -10,3 +10,4 @@
 # python-generated files while executing
 __pycache__/
 */__pycache/
+*.pyc
